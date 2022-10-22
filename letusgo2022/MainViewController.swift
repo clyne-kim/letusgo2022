@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Combine
 
 final class MainViewController: UIViewController {
 
@@ -19,12 +18,13 @@ final class MainViewController: UIViewController {
     }
     
     enum ArithmeticType: String, CaseIterable {
-        case tan2x, cos2x, sin2x, sinx, square
+        case tanx, cosx, sinx
+        case 미분, 적분, 여러복잡한계산
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "calculator"
+        title = "레쮸고 칼큘레이터"
         setupButtons()
     }
     
@@ -34,18 +34,15 @@ final class MainViewController: UIViewController {
         
         Task {
             let result: Double
-            
             switch type {
-            case .tan2x:
-                result = try await tangent2(x)
-            case .cos2x:
-                result = try await cosine2(x)
-            case .sin2x:
-                result = try await sine2(x)
+            case .tanx:
+                result = try await tangent(x)
+            case .cosx:
+                result = try await cosine(x)
             case .sinx:
                 result = try await sine(x)
-            case .square:
-                result = try await square(x)
+            default:
+                result = 0.0
             }
             await MainActor.run {
                 resultLabel.text = String(result)
@@ -92,13 +89,6 @@ private extension MainViewController {
         let cos = String(format: "%.5f", Darwin.cos(x))
         return Double(cos) ?? 0.0
     }
-    
-    func cosine2(_ x: Double) async throws -> Double {
-        try await Task.sleep(nanoseconds: .oneSecond)
-        let sine = try await sine(x)
-        let squaredSine = try await square(sine)
-        return 1 - 2 * squaredSine
-    }
 }
 
 // MARK: - Sine
@@ -109,12 +99,6 @@ private extension MainViewController {
         let sin = String(format: "%.5f", Darwin.sin(x))
         return Double(sin) ?? 0.0
     }
-    
-    func sine2(_ x: Double) async throws -> Double {
-        let sine = try await sine(x)
-        let cosine = try await cosine(x)
-        return 2 * sine * cosine
-    }
 }
 
 // MARK: - Tangent
@@ -124,24 +108,7 @@ private extension MainViewController {
         let sine = try await sine(x)
         return sine / cosine
     }
-    
-    func tangent2(_ x: Double) async throws -> Double {
-        let tangent = try await tangent(x)
-        let squaredTangent = try await square(tangent)
-        return (2 * tangent) / (1 - squaredTangent)
-    }
 }
-
-// MARK: - Arithmetic
-private extension MainViewController {
-    func square(_ x: Double) async throws -> Double {
-        print("아주 복잡한 square 함수 계산 중")
-        try await Task.sleep(nanoseconds: .oneSecond)
-        let squared = String(format: "%.5f", x*x)
-        return Double(squared) ?? 0.0
-    }
-}
-
 
 extension UInt64 {
     static let oneSecond: UInt64 = 1_000_000_000
