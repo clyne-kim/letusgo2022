@@ -14,6 +14,10 @@
 		9C133EC3290372D500D6CADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C133EC1290372D500D6CADF /* LaunchScreen.storyboard */; };
 		9C41BF452903890500CB9FBC /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C41BF442903890500CB9FBC /* MainViewController.xib */; };
 		9C41BF482903B43C00CB9FBC /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF472903B43C00CB9FBC /* MyButton.swift */; };
+		9C41BF5A2903DB2500CB9FBC /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF592903DB2500CB9FBC /* MainViewModel.swift */; };
+		9C41BF5C2903DB4000CB9FBC /* TanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF5B2903DB4000CB9FBC /* TanService.swift */; };
+		9C41BF5E2903DB4800CB9FBC /* SinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF5D2903DB4800CB9FBC /* SinService.swift */; };
+		9C41BF602903DB4E00CB9FBC /* CosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF5F2903DB4E00CB9FBC /* CosService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		9C133EC4290372D500D6CADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C41BF442903890500CB9FBC /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		9C41BF472903B43C00CB9FBC /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		9C41BF592903DB2500CB9FBC /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9C41BF5B2903DB4000CB9FBC /* TanService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanService.swift; sourceTree = "<group>"; };
+		9C41BF5D2903DB4800CB9FBC /* SinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinService.swift; sourceTree = "<group>"; };
+		9C41BF5F2903DB4E00CB9FBC /* CosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +66,11 @@
 		9C133EB5290372D300D6CADF /* letusgo2022 */ = {
 			isa = PBXGroup;
 			children = (
+				9C41BF582903DB1C00CB9FBC /* Services */,
 				9C41BF462903B42E00CB9FBC /* UIComponents */,
 				9C133EB6290372D300D6CADF /* AppDelegate.swift */,
 				9C133EB8290372D300D6CADF /* SceneDelegate.swift */,
+				9C41BF592903DB2500CB9FBC /* MainViewModel.swift */,
 				9C133EBA290372D300D6CADF /* MainViewController.swift */,
 				9C41BF442903890500CB9FBC /* MainViewController.xib */,
 				9C133EBF290372D500D6CADF /* Assets.xcassets */,
@@ -76,6 +86,16 @@
 				9C41BF472903B43C00CB9FBC /* MyButton.swift */,
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		9C41BF582903DB1C00CB9FBC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9C41BF5B2903DB4000CB9FBC /* TanService.swift */,
+				9C41BF5D2903DB4800CB9FBC /* SinService.swift */,
+				9C41BF5F2903DB4E00CB9FBC /* CosService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C41BF5A2903DB2500CB9FBC /* MainViewModel.swift in Sources */,
+				9C41BF602903DB4E00CB9FBC /* CosService.swift in Sources */,
+				9C41BF5C2903DB4000CB9FBC /* TanService.swift in Sources */,
+				9C41BF5E2903DB4800CB9FBC /* SinService.swift in Sources */,
 				9C133EBB290372D300D6CADF /* MainViewController.swift in Sources */,
 				9C133EB7290372D300D6CADF /* AppDelegate.swift in Sources */,
 				9C133EB9290372D300D6CADF /* SceneDelegate.swift in Sources */,
