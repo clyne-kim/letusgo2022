@@ -90,7 +90,3 @@ final class MainViewController: UIViewController {
     }
     
 }
-
-extension UInt64 {
-    static let oneSecond: UInt64 = 1_000_000_000
-}

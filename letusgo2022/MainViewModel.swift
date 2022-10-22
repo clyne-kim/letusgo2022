@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Sine
+import Tangent
 
 struct MainViewModel {
     let sinService: SinService

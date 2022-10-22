@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Sine
+import Tangent
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
