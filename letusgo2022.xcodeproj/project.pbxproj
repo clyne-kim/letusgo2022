@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		9C133EB7290372D300D6CADF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C133EB6290372D300D6CADF /* AppDelegate.swift */; };
 		9C133EB9290372D300D6CADF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C133EB8290372D300D6CADF /* SceneDelegate.swift */; };
-		9C133EBB290372D300D6CADF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C133EBA290372D300D6CADF /* ViewController.swift */; };
-		9C133EBE290372D300D6CADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C133EBC290372D300D6CADF /* Main.storyboard */; };
+		9C133EBB290372D300D6CADF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C133EBA290372D300D6CADF /* MainViewController.swift */; };
 		9C133EC0290372D500D6CADF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C133EBF290372D500D6CADF /* Assets.xcassets */; };
 		9C133EC3290372D500D6CADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C133EC1290372D500D6CADF /* LaunchScreen.storyboard */; };
+		9C41BF452903890500CB9FBC /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C41BF442903890500CB9FBC /* MainViewController.xib */; };
+		9C41BF482903B43C00CB9FBC /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF472903B43C00CB9FBC /* MyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C133EB3290372D300D6CADF /* letusgo2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = letusgo2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C133EB6290372D300D6CADF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C133EB8290372D300D6CADF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9C133EBA290372D300D6CADF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9C133EBD290372D300D6CADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C133EBA290372D300D6CADF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9C133EBF290372D500D6CADF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C133EC2290372D500D6CADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C133EC4290372D500D6CADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C41BF442903890500CB9FBC /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		9C41BF472903B43C00CB9FBC /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		9C133EB5290372D300D6CADF /* letusgo2022 */ = {
 			isa = PBXGroup;
 			children = (
+				9C41BF462903B42E00CB9FBC /* UIComponents */,
 				9C133EB6290372D300D6CADF /* AppDelegate.swift */,
 				9C133EB8290372D300D6CADF /* SceneDelegate.swift */,
-				9C133EBA290372D300D6CADF /* ViewController.swift */,
-				9C133EBC290372D300D6CADF /* Main.storyboard */,
+				9C133EBA290372D300D6CADF /* MainViewController.swift */,
+				9C41BF442903890500CB9FBC /* MainViewController.xib */,
 				9C133EBF290372D500D6CADF /* Assets.xcassets */,
 				9C133EC1290372D500D6CADF /* LaunchScreen.storyboard */,
 				9C133EC4290372D500D6CADF /* Info.plist */,
 			);
 			path = letusgo2022;
+			sourceTree = "<group>";
+		};
+		9C41BF462903B42E00CB9FBC /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9C41BF472903B43C00CB9FBC /* MyButton.swift */,
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +136,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C41BF452903890500CB9FBC /* MainViewController.xib in Resources */,
 				9C133EC3290372D500D6CADF /* LaunchScreen.storyboard in Resources */,
 				9C133EC0290372D500D6CADF /* Assets.xcassets in Resources */,
-				9C133EBE290372D300D6CADF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +149,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C133EBB290372D300D6CADF /* ViewController.swift in Sources */,
+				9C133EBB290372D300D6CADF /* MainViewController.swift in Sources */,
 				9C133EB7290372D300D6CADF /* AppDelegate.swift in Sources */,
 				9C133EB9290372D300D6CADF /* SceneDelegate.swift in Sources */,
+				9C41BF482903B43C00CB9FBC /* MyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9C133EBC290372D300D6CADF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C133EBD290372D300D6CADF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9C133EC1290372D500D6CADF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +298,6 @@
 				INFOPLIST_FILE = letusgo2022/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +325,6 @@
 				INFOPLIST_FILE = letusgo2022/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
