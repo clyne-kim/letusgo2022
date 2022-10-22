@@ -16,19 +16,19 @@
 		9C41BF482903B43C00CB9FBC /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF472903B43C00CB9FBC /* MyButton.swift */; };
 		9C41BF5A2903DB2500CB9FBC /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF592903DB2500CB9FBC /* MainViewModel.swift */; };
 		9C41BF602903DB4E00CB9FBC /* CosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF5F2903DB4E00CB9FBC /* CosService.swift */; };
+		9C7CBBF02904957900A9A068 /* libTangent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7CBBEF2904957900A9A068 /* libTangent.a */; };
 		9CD16FF02904584900FD0A99 /* CosineOperator1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD16FEF2904584900FD0A99 /* CosineOperator1.swift */; };
-		9CD1705C29046BC800FD0A99 /* libcosineInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD170332904689200FD0A99 /* libcosineInterface.a */; };
-		9CD1705D29046BC800FD0A99 /* libsine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD1705229046AC500FD0A99 /* libsine.a */; };
-		9CD1705E29046BC800FD0A99 /* libtangent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD1700B290467DB00FD0A99 /* libtangent.a */; };
+		9CD1705C29046BC800FD0A99 /* libCosineInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD170332904689200FD0A99 /* libCosineInterface.a */; };
+		9CD1705D29046BC800FD0A99 /* libSine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD1705229046AC500FD0A99 /* libSine.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9CD1700A290467DB00FD0A99 /* PBXContainerItemProxy */ = {
+		9C7CBBEE2904957900A9A068 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9CD17006290467DA00FD0A99 /* tangent.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 9CD16FFC290467DA00FD0A99;
-			remoteInfo = tangent;
+			remoteGlobalIDString = 9C7CBBEC2904956800A9A068;
+			remoteInfo = Tangent;
 		};
 		9CD170232904684400FD0A99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -76,9 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CD1705E29046BC800FD0A99 /* libtangent.a in Frameworks */,
-				9CD1705D29046BC800FD0A99 /* libsine.a in Frameworks */,
-				9CD1705C29046BC800FD0A99 /* libcosineInterface.a in Frameworks */,
+				9CD1705D29046BC800FD0A99 /* libSine.a in Frameworks */,
+				9CD1705C29046BC800FD0A99 /* libCosineInterface.a in Frameworks */,
+				9C7CBBF02904957900A9A068 /* libTangent.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +108,6 @@
 		9C133EB5290372D300D6CADF /* letusgo2022 */ = {
 			isa = PBXGroup;
 			children = (
-				9C41BF612904029900CB9FBC /* Extensions */,
 				9C41BF582903DB1C00CB9FBC /* Services */,
 				9C41BF462903B42E00CB9FBC /* UIComponents */,
 				9C133EB6290372D300D6CADF /* AppDelegate.swift */,
@@ -140,13 +139,6 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		9C41BF612904029900CB9FBC /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		9CD16FE92904576200FD0A99 /* CosOperators */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +150,7 @@
 		9CD17007290467DA00FD0A99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CD1700B290467DB00FD0A99 /* libtangent.a */,
+				9C7CBBEF2904957900A9A068 /* libTangent.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,8 +158,8 @@
 		9CD170202904684300FD0A99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CD170242904684400FD0A99 /* libcosine.a */,
-				9CD170332904689200FD0A99 /* libcosineInterface.a */,
+				9CD170242904684400FD0A99 /* libCosine.a */,
+				9CD170332904689200FD0A99 /* libCosineInterface.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,7 +167,7 @@
 		9CD1704E29046AC400FD0A99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CD1705229046AC500FD0A99 /* libsine.a */,
+				9CD1705229046AC500FD0A99 /* libSine.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,31 +247,31 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		9CD1700B290467DB00FD0A99 /* libtangent.a */ = {
+		9C7CBBEF2904957900A9A068 /* libTangent.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libtangent.a;
-			remoteRef = 9CD1700A290467DB00FD0A99 /* PBXContainerItemProxy */;
+			path = libTangent.a;
+			remoteRef = 9C7CBBEE2904957900A9A068 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9CD170242904684400FD0A99 /* libcosine.a */ = {
+		9CD170242904684400FD0A99 /* libCosine.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libcosine.a;
+			path = libCosine.a;
 			remoteRef = 9CD170232904684400FD0A99 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9CD170332904689200FD0A99 /* libcosineInterface.a */ = {
+		9CD170332904689200FD0A99 /* libCosineInterface.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libcosineInterface.a;
+			path = libCosineInterface.a;
 			remoteRef = 9CD170322904689200FD0A99 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9CD1705229046AC500FD0A99 /* libsine.a */ = {
+		9CD1705229046AC500FD0A99 /* libSine.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libsine.a;
+			path = libSine.a;
 			remoteRef = 9CD1705129046AC500FD0A99 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};

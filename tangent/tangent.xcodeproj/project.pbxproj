@@ -27,7 +27,7 @@
 /* Begin PBXFileReference section */
 		9CD170302904689200FD0A99 /* TanService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanService.swift; sourceTree = "<group>"; };
 		9CD170342904689200FD0A99 /* TangentOperator1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TangentOperator1.swift; sourceTree = "<group>"; };
-		9CD170892904930A00FD0A99 /* libTangent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTangent.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD170892904930A00FD0A99 /* libTangent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTangent.a; path = "/Users/cnoo/Development/iOS/letusgo2022/tangent/build/Debug-iphoneos/libTangent.a"; sourceTree = "<absolute>"; };
 		9CD1708B2904934100FD0A99 /* libCosineInterface.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCosineInterface.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD1708D2904934100FD0A99 /* libSine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSine.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -49,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				9CD16FFE290467DA00FD0A99 /* Sources */,
-				9CD170892904930A00FD0A99 /* libTangent.a */,
 				9CD1708A2904934100FD0A99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
