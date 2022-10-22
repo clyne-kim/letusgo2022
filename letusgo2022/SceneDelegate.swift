@@ -15,7 +15,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let vc = MainViewController(nibName: "MainViewController", bundle: nil)
+        let sinService = SinService()
+        let cosService = CosService()
+        let tanService = TanService(cosService: cosService,
+                                    sinService: sinService)
+        let vm = MainViewModel(sinService: sinService,
+                               cosService: cosService,
+                               tanService: tanService)
+        let vc = MainViewController(viewModel: vm)
         let nav = UINavigationController(rootViewController: vc)
         
         window = UIWindow(windowScene: windowScene)

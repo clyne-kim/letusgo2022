@@ -9,7 +9,18 @@
 import UIKit
 
 final class MainViewController: UIViewController {
-
+    
+    private let viewModel: MainViewModel
+    init(viewModel: MainViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: "MainViewController", bundle: nil)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     private var x: Double {
         get {
             let strX = inputXTextField.text ?? ""
@@ -36,11 +47,11 @@ final class MainViewController: UIViewController {
             let result: Double
             switch type {
             case .tanx:
-                result = try await tangent(x)
+                result = try await viewModel.tangent(x)
             case .cosx:
-                result = try await cosine(x)
+                result = try await viewModel.cosine(x)
             case .sinx:
-                result = try await sine(x)
+                result = try await viewModel.sine(x)
             default:
                 result = 0.0
             }
@@ -78,36 +89,6 @@ final class MainViewController: UIViewController {
         return button
     }
     
-}
-
-
-// MARK: - Cosine
-private extension MainViewController {
-    func cosine(_ x: Double) async throws -> Double {
-        print("아주 복잡한 cosine 함수 계산 중")
-        try await Task.sleep(nanoseconds: .oneSecond)
-        let cos = String(format: "%.5f", Darwin.cos(x))
-        return Double(cos) ?? 0.0
-    }
-}
-
-// MARK: - Sine
-private extension MainViewController {
-    func sine(_ x: Double) async throws -> Double {
-        print("아주 복잡한 sine 함수 계산 중")
-        try await Task.sleep(nanoseconds: .oneSecond)
-        let sin = String(format: "%.5f", Darwin.sin(x))
-        return Double(sin) ?? 0.0
-    }
-}
-
-// MARK: - Tangent
-private extension MainViewController {
-    func tangent(_ x: Double) async throws -> Double {
-        let cosine = try await cosine(x)
-        let sine = try await sine(x)
-        return sine / cosine
-    }
 }
 
 extension UInt64 {

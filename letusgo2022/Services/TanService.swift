@@ -10,5 +10,12 @@
 import Foundation
 
 struct TanService {
+    let cosService: CosService
+    let sinService: SinService
     
+    func tangent(_ x: Double) async throws -> Double {
+        let cosine = try await cosService.cosine(x)
+        let sine = try await sinService.sine(x)
+        return sine / cosine
+    }
 }
