@@ -6,13 +6,17 @@
 	<dict>
 		<key>Cosine.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
 		<key>CosineInterface.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>0</integer>
 		</dict>
 		<key>cosine.xcscheme_^#shared#^_</key>
 		<dict>
@@ -23,6 +27,19 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9CD170142904684300FD0A99</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9CD170282904685A00FD0A99</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

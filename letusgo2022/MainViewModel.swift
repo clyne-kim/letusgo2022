@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Cosine
 import Sine
 import Tangent
 

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9CD170192904684300FD0A99 /* CosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD170182904684300FD0A99 /* CosService.swift */; };
-		9CD1702C2904685A00FD0A99 /* CosineServiceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD1702B2904685A00FD0A99 /* CosineServiceable.swift */; };
+		9CCC2A35290569E800C7161B /* CosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCC2A33290569E800C7161B /* CosService.swift */; };
+		9CCC2A3E29056AD400C7161B /* CosineOperator1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCC2A3D29056AD400C7161B /* CosineOperator1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -21,22 +21,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CD170272904685A00FD0A99 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9CCC2A33290569E800C7161B /* CosService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosService.swift; sourceTree = "<group>"; };
+		9CCC2A3D29056AD400C7161B /* CosineOperator1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosineOperator1.swift; sourceTree = "<group>"; };
 		9CD170152904684300FD0A99 /* libCosine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCosine.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CD170182904684300FD0A99 /* CosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosService.swift; sourceTree = "<group>"; };
-		9CD170292904685A00FD0A99 /* libCosineInterface.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCosineInterface.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CD1702B2904685A00FD0A99 /* CosineServiceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosineServiceable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,21 +37,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CD170262904685A00FD0A99 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CCC2A3C29056AC300C7161B /* CosOperators */ = {
+			isa = PBXGroup;
+			children = (
+				9CCC2A3D29056AD400C7161B /* CosineOperator1.swift */,
+			);
+			path = CosOperators;
+			sourceTree = "<group>";
+		};
 		9CD1700C2904684300FD0A99 = {
 			isa = PBXGroup;
 			children = (
-				9CD170172904684300FD0A99 /* Implementation */,
-				9CD1702A2904685A00FD0A99 /* Interface */,
+				9CD170172904684300FD0A99 /* Sources */,
 				9CD170162904684300FD0A99 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,25 +60,17 @@
 			isa = PBXGroup;
 			children = (
 				9CD170152904684300FD0A99 /* libCosine.a */,
-				9CD170292904685A00FD0A99 /* libCosineInterface.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9CD170172904684300FD0A99 /* Implementation */ = {
+		9CD170172904684300FD0A99 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9CD170182904684300FD0A99 /* CosService.swift */,
+				9CCC2A3C29056AC300C7161B /* CosOperators */,
+				9CCC2A33290569E800C7161B /* CosService.swift */,
 			);
-			path = Implementation;
-			sourceTree = "<group>";
-		};
-		9CD1702A2904685A00FD0A99 /* Interface */ = {
-			isa = PBXGroup;
-			children = (
-				9CD1702B2904685A00FD0A99 /* CosineServiceable.swift */,
-			);
-			path = Interface;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,23 +93,6 @@
 			productReference = 9CD170152904684300FD0A99 /* libCosine.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		9CD170282904685A00FD0A99 /* CosineInterface */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9CD1702D2904685A00FD0A99 /* Build configuration list for PBXNativeTarget "CosineInterface" */;
-			buildPhases = (
-				9CD170252904685A00FD0A99 /* Sources */,
-				9CD170262904685A00FD0A99 /* Frameworks */,
-				9CD170272904685A00FD0A99 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CosineInterface;
-			productName = cosineInterface;
-			productReference = 9CD170292904685A00FD0A99 /* libCosineInterface.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -140,9 +105,7 @@
 				TargetAttributes = {
 					9CD170142904684300FD0A99 = {
 						CreatedOnToolsVersion = 13.2.1;
-					};
-					9CD170282904685A00FD0A99 = {
-						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -160,7 +123,6 @@
 			projectRoot = "";
 			targets = (
 				9CD170142904684300FD0A99 /* Cosine */,
-				9CD170282904685A00FD0A99 /* CosineInterface */,
 			);
 		};
 /* End PBXProject section */
@@ -170,15 +132,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CD170192904684300FD0A99 /* CosService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CD170252904685A00FD0A99 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9CD1702C2904685A00FD0A99 /* CosineServiceable.swift in Sources */,
+				9CCC2A3E29056AD400C7161B /* CosineOperator1.swift in Sources */,
+				9CCC2A35290569E800C7161B /* CosService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,11 +259,18 @@
 		9CD1701D2904684300FD0A99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U2XKV67PR3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,34 +279,14 @@
 		9CD1701E2904684300FD0A99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U2XKV67PR3;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		9CD1702E2904685A00FD0A99 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U2XKV67PR3;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		9CD1702F2904685A00FD0A99 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U2XKV67PR3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -370,15 +312,6 @@
 			buildConfigurations = (
 				9CD1701D2904684300FD0A99 /* Debug */,
 				9CD1701E2904684300FD0A99 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9CD1702D2904685A00FD0A99 /* Build configuration list for PBXNativeTarget "CosineInterface" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9CD1702E2904685A00FD0A99 /* Debug */,
-				9CD1702F2904685A00FD0A99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

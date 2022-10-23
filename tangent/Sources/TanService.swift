@@ -8,14 +8,14 @@
     
 
 import Foundation
-import CosineInterface
+import Cosine
 import Sine
 
 public struct TanService {
-    let cosService: CosineServiceable
+    let cosService: CosService
     let sinService: SinService
     
-    public init(cosService: CosineServiceable,
+    public init(cosService: CosService,
                 sinService: SinService) {
         self.cosService = cosService
         self.sinService = sinService

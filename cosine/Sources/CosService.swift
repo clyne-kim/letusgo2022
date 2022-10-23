@@ -8,10 +8,10 @@
     
 
 import Foundation
-import CosineInterface
 
-struct CosService: CosineServiceable {
-    func cosine(_ x: Double) async throws -> Double {
+public struct CosService {
+    public init() {}
+    public func cosine(_ x: Double) async throws -> Double {
         print("아주 복잡한 cosine 함수 계산 중")
         try await Task.sleep(nanoseconds: .oneSecond)
         let cos = String(format: "%.5f", Darwin.cos(x))

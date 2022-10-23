@@ -15,10 +15,8 @@
 		9C41BF452903890500CB9FBC /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C41BF442903890500CB9FBC /* MainViewController.xib */; };
 		9C41BF482903B43C00CB9FBC /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF472903B43C00CB9FBC /* MyButton.swift */; };
 		9C41BF5A2903DB2500CB9FBC /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF592903DB2500CB9FBC /* MainViewModel.swift */; };
-		9C41BF602903DB4E00CB9FBC /* CosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF5F2903DB4E00CB9FBC /* CosService.swift */; };
 		9C7CBBF02904957900A9A068 /* libTangent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7CBBEF2904957900A9A068 /* libTangent.a */; };
-		9CD16FF02904584900FD0A99 /* CosineOperator1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD16FEF2904584900FD0A99 /* CosineOperator1.swift */; };
-		9CD1705C29046BC800FD0A99 /* libCosineInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD170332904689200FD0A99 /* libCosineInterface.a */; };
+		9CCC2A3F29056B6600C7161B /* libCosine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD170242904684400FD0A99 /* libCosine.a */; };
 		9CD1705D29046BC800FD0A99 /* libSine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD1705229046AC500FD0A99 /* libSine.a */; };
 /* End PBXBuildFile section */
 
@@ -36,13 +34,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 9CD170152904684300FD0A99;
 			remoteInfo = cosine;
-		};
-		9CD170322904689200FD0A99 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9CD1701F2904684300FD0A99 /* cosine.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9CD170292904685A00FD0A99;
-			remoteInfo = cosineInterface;
 		};
 		9CD1705129046AC500FD0A99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -64,8 +55,6 @@
 		9C41BF442903890500CB9FBC /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		9C41BF472903B43C00CB9FBC /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		9C41BF592903DB2500CB9FBC /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		9C41BF5F2903DB4E00CB9FBC /* CosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosService.swift; sourceTree = "<group>"; };
-		9CD16FEF2904584900FD0A99 /* CosineOperator1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosineOperator1.swift; sourceTree = "<group>"; };
 		9CD17006290467DA00FD0A99 /* tangent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tangent.xcodeproj; path = tangent/tangent.xcodeproj; sourceTree = "<group>"; };
 		9CD1701F2904684300FD0A99 /* cosine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cosine.xcodeproj; path = cosine/cosine.xcodeproj; sourceTree = "<group>"; };
 		9CD1704D29046AC400FD0A99 /* sine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sine.xcodeproj; path = sine/sine.xcodeproj; sourceTree = "<group>"; };
@@ -77,7 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CD1705D29046BC800FD0A99 /* libSine.a in Frameworks */,
-				9CD1705C29046BC800FD0A99 /* libCosineInterface.a in Frameworks */,
+				9CCC2A3F29056B6600C7161B /* libCosine.a in Frameworks */,
 				9C7CBBF02904957900A9A068 /* libTangent.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,7 +97,6 @@
 		9C133EB5290372D300D6CADF /* letusgo2022 */ = {
 			isa = PBXGroup;
 			children = (
-				9C41BF582903DB1C00CB9FBC /* Services */,
 				9C41BF462903B42E00CB9FBC /* UIComponents */,
 				9C133EB6290372D300D6CADF /* AppDelegate.swift */,
 				9C133EB8290372D300D6CADF /* SceneDelegate.swift */,
@@ -130,23 +118,6 @@
 			path = UIComponents;
 			sourceTree = "<group>";
 		};
-		9C41BF582903DB1C00CB9FBC /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				9C41BF5F2903DB4E00CB9FBC /* CosService.swift */,
-				9CD16FE92904576200FD0A99 /* CosOperators */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		9CD16FE92904576200FD0A99 /* CosOperators */ = {
-			isa = PBXGroup;
-			children = (
-				9CD16FEF2904584900FD0A99 /* CosineOperator1.swift */,
-			);
-			path = CosOperators;
-			sourceTree = "<group>";
-		};
 		9CD17007290467DA00FD0A99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				9CD170242904684400FD0A99 /* libCosine.a */,
-				9CD170332904689200FD0A99 /* libCosineInterface.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -261,13 +231,6 @@
 			remoteRef = 9CD170232904684400FD0A99 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9CD170332904689200FD0A99 /* libCosineInterface.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libCosineInterface.a;
-			remoteRef = 9CD170322904689200FD0A99 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		9CD1705229046AC500FD0A99 /* libSine.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -296,9 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C41BF5A2903DB2500CB9FBC /* MainViewModel.swift in Sources */,
-				9C41BF602903DB4E00CB9FBC /* CosService.swift in Sources */,
 				9C133EBB290372D300D6CADF /* MainViewController.swift in Sources */,
-				9CD16FF02904584900FD0A99 /* CosineOperator1.swift in Sources */,
 				9C133EB7290372D300D6CADF /* AppDelegate.swift in Sources */,
 				9C133EB9290372D300D6CADF /* SceneDelegate.swift in Sources */,
 				9C41BF482903B43C00CB9FBC /* MyButton.swift in Sources */,

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Cosine
 import Sine
 import Tangent
 
