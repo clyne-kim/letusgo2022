@@ -9,6 +9,7 @@
 
 import Foundation
 import CSInterface
+import MyDI
 
 public struct CosService {
     private let sineProtocol: SineProtocol

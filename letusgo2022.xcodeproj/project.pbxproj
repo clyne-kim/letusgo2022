@@ -21,6 +21,9 @@
 		9C6B56792905BA9900181C20 /* libTangent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B566D2905BA1600181C20 /* libTangent.a */; };
 		9C6B56A32905BD6A00181C20 /* CosineInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56A22905BD6A00181C20 /* CosineInject.swift */; };
 		9C6B56A52905BDE100181C20 /* SineInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56A42905BDE100181C20 /* SineInject.swift */; };
+		9C6B56C72905C45000181C20 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56C52905C45000181C20 /* Container.swift */; };
+		9C6B56C82905C45000181C20 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56C62905C45000181C20 /* Injectable.swift */; };
+		9C6B56CF2905C49E00181C20 /* libMyDI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B56BC2905C42800181C20 /* libMyDI.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +55,26 @@
 			remoteGlobalIDString = 9C6B56632905B9C300181C20;
 			remoteInfo = CSInterface;
 		};
+		9C6B56D02905C49E00181C20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C133EAB290372D300D6CADF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C6B56BB2905C42800181C20;
+			remoteInfo = MyDI;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9C6B56BA2905C42800181C20 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9C133EB3290372D300D6CADF /* letusgo2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = letusgo2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +89,9 @@
 		9C41BF592903DB2500CB9FBC /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		9C6B56A22905BD6A00181C20 /* CosineInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosineInject.swift; sourceTree = "<group>"; };
 		9C6B56A42905BDE100181C20 /* SineInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineInject.swift; sourceTree = "<group>"; };
+		9C6B56BC2905C42800181C20 /* libMyDI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMyDI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6B56C52905C45000181C20 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		9C6B56C62905C45000181C20 /* Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		9CCC2A892905B85000C7161B /* trigonometry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = trigonometry.xcodeproj; path = trigonometry/trigonometry.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +103,15 @@
 				9C6B56762905BA9900181C20 /* libCosine.a in Frameworks */,
 				9C6B56772905BA9900181C20 /* libCSInterface.a in Frameworks */,
 				9C6B56782905BA9900181C20 /* libSine.a in Frameworks */,
+				9C6B56CF2905C49E00181C20 /* libMyDI.a in Frameworks */,
 				9C6B56792905BA9900181C20 /* libTangent.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C6B56B92905C42800181C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +123,7 @@
 			children = (
 				9CCC2A892905B85000C7161B /* trigonometry.xcodeproj */,
 				9C133EB5290372D300D6CADF /* letusgo2022 */,
+				9C6B56BD2905C42800181C20 /* MyDI */,
 				9C133EB4290372D300D6CADF /* Products */,
 				9CD1705B29046BC800FD0A99 /* Frameworks */,
 			);
@@ -99,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				9C133EB3290372D300D6CADF /* letusgo2022.app */,
+				9C6B56BC2905C42800181C20 /* libMyDI.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +172,15 @@
 			path = InjectableItems;
 			sourceTree = "<group>";
 		};
+		9C6B56BD2905C42800181C20 /* MyDI */ = {
+			isa = PBXGroup;
+			children = (
+				9C6B56C52905C45000181C20 /* Container.swift */,
+				9C6B56C62905C45000181C20 /* Injectable.swift */,
+			);
+			path = MyDI;
+			sourceTree = "<group>";
+		};
 		9CCC2A8A2905B85000C7161B /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,11 +213,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				9C6B56D12905C49E00181C20 /* PBXTargetDependency */,
 			);
 			name = letusgo2022;
 			productName = letusgo2022;
 			productReference = 9C133EB3290372D300D6CADF /* letusgo2022.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9C6B56BB2905C42800181C20 /* MyDI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C6B56C02905C42800181C20 /* Build configuration list for PBXNativeTarget "MyDI" */;
+			buildPhases = (
+				9C6B56B82905C42800181C20 /* Sources */,
+				9C6B56B92905C42800181C20 /* Frameworks */,
+				9C6B56BA2905C42800181C20 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDI;
+			productName = MyDI;
+			productReference = 9C6B56BC2905C42800181C20 /* libMyDI.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -186,6 +248,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					9C133EB2290372D300D6CADF = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					9C6B56BB2905C42800181C20 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -210,6 +275,7 @@
 			projectRoot = "";
 			targets = (
 				9C133EB2290372D300D6CADF /* letusgo2022 */,
+				9C6B56BB2905C42800181C20 /* MyDI */,
 			);
 		};
 /* End PBXProject section */
@@ -273,7 +339,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C6B56B82905C42800181C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C6B56C82905C45000181C20 /* Injectable.swift in Sources */,
+				9C6B56C72905C45000181C20 /* Container.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C6B56D12905C49E00181C20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C6B56BB2905C42800181C20 /* MyDI */;
+			targetProxy = 9C6B56D02905C49E00181C20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9C133EC1290372D500D6CADF /* LaunchScreen.storyboard */ = {
@@ -457,6 +540,32 @@
 			};
 			name = Release;
 		};
+		9C6B56C12905C42800181C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2XKV67PR3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C6B56C22905C42800181C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2XKV67PR3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -474,6 +583,15 @@
 			buildConfigurations = (
 				9C133EC8290372D500D6CADF /* Debug */,
 				9C133EC9290372D500D6CADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C6B56C02905C42800181C20 /* Build configuration list for PBXNativeTarget "MyDI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C6B56C12905C42800181C20 /* Debug */,
+				9C6B56C22905C42800181C20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

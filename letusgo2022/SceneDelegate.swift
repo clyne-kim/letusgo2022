@@ -7,10 +7,7 @@
 //
 
 import UIKit
-import Sine
-import Cosine
-import Tangent
-import CSInterface
+import MyDI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 

@@ -14,14 +14,15 @@
 		9C6B568C2905BB2C00181C20 /* TangentOperator1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B568A2905BB2C00181C20 /* TangentOperator1.swift */; };
 		9C6B568D2905BB2C00181C20 /* TanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B568B2905BB2C00181C20 /* TanService.swift */; };
 		9C6B56922905BB3100181C20 /* CosineProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B568F2905BB3100181C20 /* CosineProtocol.swift */; };
-		9C6B56932905BB3100181C20 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56902905BB3100181C20 /* Container.swift */; };
-		9C6B56942905BB3100181C20 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56912905BB3100181C20 /* Injectable.swift */; };
 		9C6B56962905BB4200181C20 /* libCSInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B56632905B9C300181C20 /* libCSInterface.a */; };
 		9C6B56972905BB4B00181C20 /* libCSInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B56632905B9C300181C20 /* libCSInterface.a */; };
 		9C6B56982905BB5000181C20 /* libCSInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B56632905B9C300181C20 /* libCSInterface.a */; };
 		9C6B569A2905BBBE00181C20 /* SineProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56992905BBBE00181C20 /* SineProtocol.swift */; };
 		9C6B569C2905BD0500181C20 /* CosineProtocolImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B569B2905BD0500181C20 /* CosineProtocolImpl.swift */; };
 		9C6B56A72905BE1100181C20 /* SineProtocolImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56A62905BE1100181C20 /* SineProtocolImpl.swift */; };
+		9C6B56CA2905C48500181C20 /* libMyDI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B56C92905C48500181C20 /* libMyDI.a */; };
+		9C6B56CC2905C48B00181C20 /* libMyDI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B56CB2905C48B00181C20 /* libMyDI.a */; };
+		9C6B56CE2905C49100181C20 /* libMyDI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B56CD2905C49100181C20 /* libMyDI.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,11 +76,12 @@
 		9C6B568A2905BB2C00181C20 /* TangentOperator1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TangentOperator1.swift; sourceTree = "<group>"; };
 		9C6B568B2905BB2C00181C20 /* TanService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanService.swift; sourceTree = "<group>"; };
 		9C6B568F2905BB3100181C20 /* CosineProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosineProtocol.swift; sourceTree = "<group>"; };
-		9C6B56902905BB3100181C20 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
-		9C6B56912905BB3100181C20 /* Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		9C6B56992905BBBE00181C20 /* SineProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineProtocol.swift; sourceTree = "<group>"; };
 		9C6B569B2905BD0500181C20 /* CosineProtocolImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosineProtocolImpl.swift; sourceTree = "<group>"; };
 		9C6B56A62905BE1100181C20 /* SineProtocolImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineProtocolImpl.swift; sourceTree = "<group>"; };
+		9C6B56C92905C48500181C20 /* libMyDI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMyDI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6B56CB2905C48B00181C20 /* libMyDI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMyDI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6B56CD2905C49100181C20 /* libMyDI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMyDI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6B56CA2905C48500181C20 /* libMyDI.a in Frameworks */,
 				9C6B56962905BB4200181C20 /* libCSInterface.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6B56CC2905C48B00181C20 /* libMyDI.a in Frameworks */,
 				9C6B56972905BB4B00181C20 /* libCSInterface.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6B56CE2905C49100181C20 /* libMyDI.a in Frameworks */,
 				9C6B56982905BB5000181C20 /* libCSInterface.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,8 +180,6 @@
 			children = (
 				9C6B56992905BBBE00181C20 /* SineProtocol.swift */,
 				9C6B568F2905BB3100181C20 /* CosineProtocol.swift */,
-				9C6B56902905BB3100181C20 /* Container.swift */,
-				9C6B56912905BB3100181C20 /* Injectable.swift */,
 			);
 			path = CSInterface;
 			sourceTree = "<group>";
@@ -184,6 +187,9 @@
 		9C6B56952905BB4200181C20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C6B56CD2905C49100181C20 /* libMyDI.a */,
+				9C6B56CB2905C48B00181C20 /* libMyDI.a */,
+				9C6B56C92905C48500181C20 /* libMyDI.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -362,8 +368,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C6B56922905BB3100181C20 /* CosineProtocol.swift in Sources */,
-				9C6B56942905BB3100181C20 /* Injectable.swift in Sources */,
-				9C6B56932905BB3100181C20 /* Container.swift in Sources */,
 				9C6B569A2905BBBE00181C20 /* SineProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
