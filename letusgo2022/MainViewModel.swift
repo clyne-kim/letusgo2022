@@ -12,9 +12,9 @@ import Sine
 import Tangent
 
 struct MainViewModel {
-    let sinService: SinService
-    let cosService: CosService
-    let tanService: TanService
+    private let sinService: SinService = .init()
+    private let cosService: CosService = .init()
+    private let tanService: TanService = .init()
     
     func tangent(_ x: Double) async throws -> Double {
         try await tanService.tangent(x)
@@ -26,5 +26,15 @@ struct MainViewModel {
     
     func cosine(_ x: Double) async throws -> Double {
         try await cosService.cosine(x)
+    }
+    
+    // MARK: 추가된 기능
+    
+    func sine2(_ x: Double) async throws -> Double {
+        try await sinService.sine2(x)
+    }
+    
+    func cosine2(_ x: Double) async throws -> Double {
+        try await cosService.cosine2(x)
     }
 }

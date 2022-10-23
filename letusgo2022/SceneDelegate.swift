@@ -7,9 +7,10 @@
 //
 
 import UIKit
-import Cosine
 import Sine
+import Cosine
 import Tangent
+import CSInterface
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,13 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let sinService = SinService()
-        let cosService = CosService()
-        let tanService = TanService(cosService: cosService,
-                                    sinService: sinService)
-        let vm = MainViewModel(sinService: sinService,
-                               cosService: cosService,
-                               tanService: tanService)
+        DIContainer.shared.regist(injectType: CosineInject.self)
+        DIContainer.shared.regist(injectType: SineInject.self)
+        
+        let vm = MainViewModel()
         let vc = MainViewController(viewModel: vm)
         let nav = UINavigationController(rootViewController: vc)
         
@@ -33,6 +31,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
     }
+    
+//    struct SinProvider: SinProvidable {
+//        func makeSinInstance() -> SinServiceable {
+//            return SinService()
+//        }
+//    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

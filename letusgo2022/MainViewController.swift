@@ -29,7 +29,7 @@ final class MainViewController: UIViewController {
     }
     
     enum ArithmeticType: String, CaseIterable {
-        case tanx, cosx, sinx
+        case tanx, cosx, sinx, cos2x, sin2x
         case 미분, 적분, 여러복잡한계산
     }
     
@@ -52,6 +52,10 @@ final class MainViewController: UIViewController {
                 result = try await viewModel.cosine(x)
             case .sinx:
                 result = try await viewModel.sine(x)
+            case .cos2x:
+                result = try await viewModel.cosine2(x)
+            case .sin2x:
+                result = try await viewModel.sine2(x)
             default:
                 result = 0.0
             }

@@ -15,32 +15,42 @@
 		9C41BF452903890500CB9FBC /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C41BF442903890500CB9FBC /* MainViewController.xib */; };
 		9C41BF482903B43C00CB9FBC /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF472903B43C00CB9FBC /* MyButton.swift */; };
 		9C41BF5A2903DB2500CB9FBC /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF592903DB2500CB9FBC /* MainViewModel.swift */; };
-		9C7CBBF02904957900A9A068 /* libTangent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7CBBEF2904957900A9A068 /* libTangent.a */; };
-		9CCC2A3F29056B6600C7161B /* libCosine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD170242904684400FD0A99 /* libCosine.a */; };
-		9CD1705D29046BC800FD0A99 /* libSine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD1705229046AC500FD0A99 /* libSine.a */; };
+		9C6B56762905BA9900181C20 /* libCosine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B56522905B99900181C20 /* libCosine.a */; };
+		9C6B56772905BA9900181C20 /* libCSInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B566F2905BA1600181C20 /* libCSInterface.a */; };
+		9C6B56782905BA9900181C20 /* libSine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B56502905B99900181C20 /* libSine.a */; };
+		9C6B56792905BA9900181C20 /* libTangent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B566D2905BA1600181C20 /* libTangent.a */; };
+		9C6B56A32905BD6A00181C20 /* CosineInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56A22905BD6A00181C20 /* CosineInject.swift */; };
+		9C6B56A52905BDE100181C20 /* SineInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56A42905BDE100181C20 /* SineInject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9C7CBBEE2904957900A9A068 /* PBXContainerItemProxy */ = {
+		9C6B564F2905B99900181C20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9CD17006290467DA00FD0A99 /* tangent.xcodeproj */;
+			containerPortal = 9CCC2A892905B85000C7161B /* trigonometry.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 9C7CBBEC2904956800A9A068;
+			remoteGlobalIDString = 9C6B562B2905B97000181C20;
+			remoteInfo = Sine;
+		};
+		9C6B56512905B99900181C20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CCC2A892905B85000C7161B /* trigonometry.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C6B56362905B97C00181C20;
+			remoteInfo = Cosine;
+		};
+		9C6B566C2905BA1600181C20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CCC2A892905B85000C7161B /* trigonometry.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C6B56582905B9B700181C20;
 			remoteInfo = Tangent;
 		};
-		9CD170232904684400FD0A99 /* PBXContainerItemProxy */ = {
+		9C6B566E2905BA1600181C20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9CD1701F2904684300FD0A99 /* cosine.xcodeproj */;
+			containerPortal = 9CCC2A892905B85000C7161B /* trigonometry.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 9CD170152904684300FD0A99;
-			remoteInfo = cosine;
-		};
-		9CD1705129046AC500FD0A99 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9CD1704D29046AC400FD0A99 /* sine.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9CD1704329046AC400FD0A99;
-			remoteInfo = sine;
+			remoteGlobalIDString = 9C6B56632905B9C300181C20;
+			remoteInfo = CSInterface;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,9 +65,9 @@
 		9C41BF442903890500CB9FBC /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		9C41BF472903B43C00CB9FBC /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		9C41BF592903DB2500CB9FBC /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		9CD17006290467DA00FD0A99 /* tangent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tangent.xcodeproj; path = tangent/tangent.xcodeproj; sourceTree = "<group>"; };
-		9CD1701F2904684300FD0A99 /* cosine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cosine.xcodeproj; path = cosine/cosine.xcodeproj; sourceTree = "<group>"; };
-		9CD1704D29046AC400FD0A99 /* sine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sine.xcodeproj; path = sine/sine.xcodeproj; sourceTree = "<group>"; };
+		9C6B56A22905BD6A00181C20 /* CosineInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosineInject.swift; sourceTree = "<group>"; };
+		9C6B56A42905BDE100181C20 /* SineInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineInject.swift; sourceTree = "<group>"; };
+		9CCC2A892905B85000C7161B /* trigonometry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = trigonometry.xcodeproj; path = trigonometry/trigonometry.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +75,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CD1705D29046BC800FD0A99 /* libSine.a in Frameworks */,
-				9CCC2A3F29056B6600C7161B /* libCosine.a in Frameworks */,
-				9C7CBBF02904957900A9A068 /* libTangent.a in Frameworks */,
+				9C6B56762905BA9900181C20 /* libCosine.a in Frameworks */,
+				9C6B56772905BA9900181C20 /* libCSInterface.a in Frameworks */,
+				9C6B56782905BA9900181C20 /* libSine.a in Frameworks */,
+				9C6B56792905BA9900181C20 /* libTangent.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,9 +88,7 @@
 		9C133EAA290372D300D6CADF = {
 			isa = PBXGroup;
 			children = (
-				9CD1704D29046AC400FD0A99 /* sine.xcodeproj */,
-				9CD1701F2904684300FD0A99 /* cosine.xcodeproj */,
-				9CD17006290467DA00FD0A99 /* tangent.xcodeproj */,
+				9CCC2A892905B85000C7161B /* trigonometry.xcodeproj */,
 				9C133EB5290372D300D6CADF /* letusgo2022 */,
 				9C133EB4290372D300D6CADF /* Products */,
 				9CD1705B29046BC800FD0A99 /* Frameworks */,
@@ -97,6 +106,7 @@
 		9C133EB5290372D300D6CADF /* letusgo2022 */ = {
 			isa = PBXGroup;
 			children = (
+				9C6B569D2905BD5600181C20 /* InjectableItems */,
 				9C41BF462903B42E00CB9FBC /* UIComponents */,
 				9C133EB6290372D300D6CADF /* AppDelegate.swift */,
 				9C133EB8290372D300D6CADF /* SceneDelegate.swift */,
@@ -118,26 +128,22 @@
 			path = UIComponents;
 			sourceTree = "<group>";
 		};
-		9CD17007290467DA00FD0A99 /* Products */ = {
+		9C6B569D2905BD5600181C20 /* InjectableItems */ = {
 			isa = PBXGroup;
 			children = (
-				9C7CBBEF2904957900A9A068 /* libTangent.a */,
+				9C6B56A22905BD6A00181C20 /* CosineInject.swift */,
+				9C6B56A42905BDE100181C20 /* SineInject.swift */,
 			);
-			name = Products;
+			path = InjectableItems;
 			sourceTree = "<group>";
 		};
-		9CD170202904684300FD0A99 /* Products */ = {
+		9CCC2A8A2905B85000C7161B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CD170242904684400FD0A99 /* libCosine.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9CD1704E29046AC400FD0A99 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9CD1705229046AC500FD0A99 /* libSine.a */,
+				9C6B56502905B99900181C20 /* libSine.a */,
+				9C6B56522905B99900181C20 /* libCosine.a */,
+				9C6B566D2905BA1600181C20 /* libTangent.a */,
+				9C6B566F2905BA1600181C20 /* libCSInterface.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,16 +203,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 9CD170202904684300FD0A99 /* Products */;
-					ProjectRef = 9CD1701F2904684300FD0A99 /* cosine.xcodeproj */;
-				},
-				{
-					ProductGroup = 9CD1704E29046AC400FD0A99 /* Products */;
-					ProjectRef = 9CD1704D29046AC400FD0A99 /* sine.xcodeproj */;
-				},
-				{
-					ProductGroup = 9CD17007290467DA00FD0A99 /* Products */;
-					ProjectRef = 9CD17006290467DA00FD0A99 /* tangent.xcodeproj */;
+					ProductGroup = 9CCC2A8A2905B85000C7161B /* Products */;
+					ProjectRef = 9CCC2A892905B85000C7161B /* trigonometry.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -217,25 +215,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		9C7CBBEF2904957900A9A068 /* libTangent.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libTangent.a;
-			remoteRef = 9C7CBBEE2904957900A9A068 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9CD170242904684400FD0A99 /* libCosine.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libCosine.a;
-			remoteRef = 9CD170232904684400FD0A99 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9CD1705229046AC500FD0A99 /* libSine.a */ = {
+		9C6B56502905B99900181C20 /* libSine.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSine.a;
-			remoteRef = 9CD1705129046AC500FD0A99 /* PBXContainerItemProxy */;
+			remoteRef = 9C6B564F2905B99900181C20 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C6B56522905B99900181C20 /* libCosine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCosine.a;
+			remoteRef = 9C6B56512905B99900181C20 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C6B566D2905BA1600181C20 /* libTangent.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTangent.a;
+			remoteRef = 9C6B566C2905BA1600181C20 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9C6B566F2905BA1600181C20 /* libCSInterface.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCSInterface.a;
+			remoteRef = 9C6B566E2905BA1600181C20 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -259,8 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C41BF5A2903DB2500CB9FBC /* MainViewModel.swift in Sources */,
+				9C6B56A52905BDE100181C20 /* SineInject.swift in Sources */,
 				9C133EBB290372D300D6CADF /* MainViewController.swift in Sources */,
 				9C133EB7290372D300D6CADF /* AppDelegate.swift in Sources */,
+				9C6B56A32905BD6A00181C20 /* CosineInject.swift in Sources */,
 				9C133EB9290372D300D6CADF /* SceneDelegate.swift in Sources */,
 				9C41BF482903B43C00CB9FBC /* MyButton.swift in Sources */,
 			);

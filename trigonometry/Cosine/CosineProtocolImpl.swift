@@ -1,15 +1,16 @@
 //
 //  let us: Go! 2022, fall
-//  CosService.swift
+//  CosineProtocolImpl.swift
 //
 //  Created by clyne.kim on 2022/10/22.
 //  Copyright 2022 clyne.kim All rights reserved
 //
-    
 
 import Foundation
+import CSInterface
+import Darwin
 
-public struct CosService {
+public struct CosineProtocolImpl: CosineProtocol {
     public init() {}
     public func cosine(_ x: Double) async throws -> Double {
         print("아주 복잡한 cosine 함수 계산 중")
