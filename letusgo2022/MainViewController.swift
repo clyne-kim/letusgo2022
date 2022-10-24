@@ -24,7 +24,7 @@ final class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "레쮸고 칼큘레이터"
+        title = "렛어스고 공학계산기"
         setupButtons()
     }
     
