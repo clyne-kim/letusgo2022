@@ -16,8 +16,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        DIContainer.shared.regist(injectType: CosineInject.self)
-        DIContainer.shared.regist(injectType: SineInject.self)
+        DIContainer.shared.등록하기(주사기: Cosine주사기.self)
+        DIContainer.shared.등록하기(주사기: Sine주사기.self)
         
         let vm = MainViewModel()
         let vc = MainViewController(viewModel: vm)
@@ -28,12 +28,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
     }
-    
-//    struct SinProvider: SinProvidable {
-//        func makeSinInstance() -> SinServiceable {
-//            return SinService()
-//        }
-//    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

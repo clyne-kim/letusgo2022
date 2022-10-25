@@ -1,19 +1,19 @@
 //
 //  let us: Go! 2022, fall
-//  CosineInject.swift
+//  SineInject.swift
 //
 //  Created by clyne.kim on 2022/10/24.
 //  Copyright 2022 clyne.kim All rights reserved
 //
-
+    
 import Foundation
-import Cosine
+import Sine
 import MyDI
 
-struct CosineInject: Injectable {
-    var id: String = "cosineKey"
+struct Sine주사기: Injectable {
+    var key: String = "sineKey"
     
-    func resolve() -> Any {
-        CosineProtocolImpl()
+    func 주입() -> Any {
+        SineProtocolImpl()
     }
 }

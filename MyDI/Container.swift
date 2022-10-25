@@ -9,20 +9,20 @@
 import Foundation
 
 public protocol DIContainable {
-  func regist(injectType: Injectable.Type)
-  func load(for injectId: String) -> Injectable?
+    func 등록하기(주사기: Injectable.Type)
+    func 꺼내오기(key: String) -> Injectable?
 }
 
 public class DIContainer: DIContainable {
-  private var injections: [String: Injectable] = [:]
-  public static let shared: DIContainer = DIContainer()
-
-  public func regist(injectType: Injectable.Type) {
-    let injection = injectType.init()
-    injections[injection.id] = injection
-  }
-
-  public func load(for injectId: String) -> Injectable? {
-    return injections[injectId]
-  }
+    private var injections: [String: Injectable] = [:]
+    public static let shared: DIContainer = DIContainer()
+    
+    public func 등록하기(주사기: Injectable.Type) {
+        let injection = 주사기.init()
+        injections[injection.key] = injection
+    }
+    
+    public func 꺼내오기(key: String) -> Injectable? {
+        injections[key]
+    }
 }

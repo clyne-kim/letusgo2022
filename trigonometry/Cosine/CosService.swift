@@ -16,13 +16,16 @@ public struct CosService {
     private let cosineProtocol: CosineProtocol
     public init() {
         let container = DIContainer.shared
-        guard let sineImpl = container.load(for: "sineKey")?.resolve() as? SineProtocol,
-              let cosineImpl = container.load(for: "cosineKey")?.resolve() as? CosineProtocol
+        guard
+            let sine주사기 = container.꺼내오기(key: "sineKey"),
+            let cosine주사기 = container.꺼내오기(key: "cosineKey"),
+            let sine구현 = sine주사기.주입() as? SineProtocol,
+            let cosine구현 = cosine주사기.주입() as? CosineProtocol
         else {
             fatalError("[CosService] need to regist implementations")
         }
-        self.sineProtocol = sineImpl
-        self.cosineProtocol = cosineImpl
+        self.sineProtocol = sine구현
+        self.cosineProtocol = cosine구현
     }
     
     public func cosine(_ x: Double) async throws -> Double {

@@ -9,7 +9,7 @@
 import Foundation
 
 public protocol Injectable {
-  init()
-  var id: String { get }
-  func resolve() -> Any
+    init()
+    var key: String { get }
+    func 주입() -> Any
 }

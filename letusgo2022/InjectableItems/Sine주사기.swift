@@ -10,10 +10,10 @@ import Foundation
 import Sine
 import MyDI
 
-struct SineInject: Injectable {
-    var id: String = "sineKey"
+struct Sine주사기: Injectable {
+    var key: String = "sineKey"
     
-    func resolve() -> Any {
+    func 주입() -> Any {
         SineProtocolImpl()
     }
 }

@@ -18,8 +18,8 @@
 		9C6B56762905BA9900181C20 /* libCosine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B56522905B99900181C20 /* libCosine.a */; };
 		9C6B56782905BA9900181C20 /* libSine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B56502905B99900181C20 /* libSine.a */; };
 		9C6B56792905BA9900181C20 /* libTangent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B566D2905BA1600181C20 /* libTangent.a */; };
-		9C6B56A32905BD6A00181C20 /* CosineInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56A22905BD6A00181C20 /* CosineInject.swift */; };
-		9C6B56A52905BDE100181C20 /* SineInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56A42905BDE100181C20 /* SineInject.swift */; };
+		9C6B56A32905BD6A00181C20 /* Cosine주사기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56A22905BD6A00181C20 /* Cosine주사기.swift */; };
+		9C6B56A52905BDE100181C20 /* Sine주사기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56A42905BDE100181C20 /* Sine주사기.swift */; };
 		9C6B56C72905C45000181C20 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56C52905C45000181C20 /* Container.swift */; };
 		9C6B56C82905C45000181C20 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56C62905C45000181C20 /* Injectable.swift */; };
 		9C6B56CF2905C49E00181C20 /* libMyDI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B56BC2905C42800181C20 /* libMyDI.a */; };
@@ -86,8 +86,8 @@
 		9C41BF442903890500CB9FBC /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		9C41BF472903B43C00CB9FBC /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		9C41BF592903DB2500CB9FBC /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		9C6B56A22905BD6A00181C20 /* CosineInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosineInject.swift; sourceTree = "<group>"; };
-		9C6B56A42905BDE100181C20 /* SineInject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineInject.swift; sourceTree = "<group>"; };
+		9C6B56A22905BD6A00181C20 /* Cosine주사기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cosine주사기.swift"; sourceTree = "<group>"; };
+		9C6B56A42905BDE100181C20 /* Sine주사기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sine주사기.swift"; sourceTree = "<group>"; };
 		9C6B56BC2905C42800181C20 /* libMyDI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMyDI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6B56C52905C45000181C20 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		9C6B56C62905C45000181C20 /* Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
@@ -164,8 +164,8 @@
 		9C6B569D2905BD5600181C20 /* InjectableItems */ = {
 			isa = PBXGroup;
 			children = (
-				9C6B56A22905BD6A00181C20 /* CosineInject.swift */,
-				9C6B56A42905BDE100181C20 /* SineInject.swift */,
+				9C6B56A22905BD6A00181C20 /* Cosine주사기.swift */,
+				9C6B56A42905BDE100181C20 /* Sine주사기.swift */,
 			);
 			path = InjectableItems;
 			sourceTree = "<group>";
@@ -328,10 +328,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C41BF5A2903DB2500CB9FBC /* MainViewModel.swift in Sources */,
-				9C6B56A52905BDE100181C20 /* SineInject.swift in Sources */,
+				9C6B56A52905BDE100181C20 /* Sine주사기.swift in Sources */,
 				9C133EBB290372D300D6CADF /* MainViewController.swift in Sources */,
 				9C133EB7290372D300D6CADF /* AppDelegate.swift in Sources */,
-				9C6B56A32905BD6A00181C20 /* CosineInject.swift in Sources */,
+				9C6B56A32905BD6A00181C20 /* Cosine주사기.swift in Sources */,
 				9C133EB9290372D300D6CADF /* SceneDelegate.swift in Sources */,
 				9C41BF482903B43C00CB9FBC /* MyButton.swift in Sources */,
 			);
