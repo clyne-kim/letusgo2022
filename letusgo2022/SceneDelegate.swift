@@ -28,12 +28,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
     }
-    
-//    struct SinProvider: SinProvidable {
-//        func makeSinInstance() -> SinServiceable {
-//            return SinService()
-//        }
-//    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
