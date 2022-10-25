@@ -6,8 +6,6 @@
 //  Copyright 2022 clyne.kim All rights reserved
 //
 
-public let sinInjectId = "SinInjectId"
-
 public protocol SineProtocol {
     func sine(_ x: Double) async throws -> Double
 }

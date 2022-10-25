@@ -7,12 +7,11 @@
 //
 
 import Foundation
-import CSInterface
 import Cosine
 import MyDI
 
 struct CosineInject: Injectable {
-    var id: String = cosInjectId
+    var id: String = "cosineKey"
     
     func resolve() -> Any {
         CosineProtocolImpl()

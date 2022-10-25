@@ -7,12 +7,11 @@
 //
     
 import Foundation
-import CSInterface
 import Sine
 import MyDI
 
 struct SineInject: Injectable {
-    var id: String = sinInjectId
+    var id: String = "sineKey"
     
     func resolve() -> Any {
         SineProtocolImpl()

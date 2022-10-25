@@ -6,8 +6,6 @@
 //  Copyright 2022 clyne.kim All rights reserved
 //
 
-public let cosInjectId = "CosInjectId"
-
 public protocol CosineProtocol {
     func cosine(_ x: Double) async throws -> Double
 }

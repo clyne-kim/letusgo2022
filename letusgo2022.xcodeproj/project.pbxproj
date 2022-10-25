@@ -16,7 +16,6 @@
 		9C41BF482903B43C00CB9FBC /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF472903B43C00CB9FBC /* MyButton.swift */; };
 		9C41BF5A2903DB2500CB9FBC /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41BF592903DB2500CB9FBC /* MainViewModel.swift */; };
 		9C6B56762905BA9900181C20 /* libCosine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B56522905B99900181C20 /* libCosine.a */; };
-		9C6B56772905BA9900181C20 /* libCSInterface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B566F2905BA1600181C20 /* libCSInterface.a */; };
 		9C6B56782905BA9900181C20 /* libSine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B56502905B99900181C20 /* libSine.a */; };
 		9C6B56792905BA9900181C20 /* libTangent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6B566D2905BA1600181C20 /* libTangent.a */; };
 		9C6B56A32905BD6A00181C20 /* CosineInject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B56A22905BD6A00181C20 /* CosineInject.swift */; };
@@ -101,7 +100,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C6B56762905BA9900181C20 /* libCosine.a in Frameworks */,
-				9C6B56772905BA9900181C20 /* libCSInterface.a in Frameworks */,
 				9C6B56782905BA9900181C20 /* libSine.a in Frameworks */,
 				9C6B56CF2905C49E00181C20 /* libMyDI.a in Frameworks */,
 				9C6B56792905BA9900181C20 /* libTangent.a in Frameworks */,

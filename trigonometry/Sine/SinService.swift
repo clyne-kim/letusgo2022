@@ -16,8 +16,8 @@ public struct SinService {
     private let cosineProtocol: CosineProtocol
     public init() {
         let container = DIContainer.shared
-        guard let sineImpl = container.load(for: sinInjectId)?.resolve() as? SineProtocol,
-              let cosineImpl = container.load(for: cosInjectId)?.resolve() as? CosineProtocol
+        guard let sineImpl = container.load(for: "sineKey")?.resolve() as? SineProtocol,
+              let cosineImpl = container.load(for: "cosineKey")?.resolve() as? CosineProtocol
         else {
             fatalError("[SinService] need to regist implementations")
         }
